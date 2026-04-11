@@ -17,7 +17,7 @@ export default function AboutSection() {
           {[
             {
               title: "Clinician first.",
-              body: "Six years of clinical practice gave me one unfair advantage: I know what breaks, why it breaks, and what it costs when it does."
+              body: "Most PMs research the user. I was the user. Years of clinical taught me what no user interview ever could."
             },
             {
               title: "AI Product Manager.",
