@@ -1,3 +1,5 @@
+import aditiPhoto from "@/assets/aditi-photo.jpg";
+
 const stats = [
   { value: "30+", label: "Enterprise biopharma partners" },
   { value: "70%", label: "Pilot-to-paid conversion rate" },
@@ -9,17 +11,27 @@ const stats = [
 export default function HeroSection() {
   return (
     <section id="top" className="relative min-h-screen pt-24">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[1.4fr_1fr] lg:py-24">
-        {/* Left */}
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[2fr_3fr] lg:py-24">
+        {/* Left — Photo */}
+        <div className="flex items-start justify-center">
+          <img
+            src={aditiPhoto}
+            alt="Dr. Aditi Soni"
+            className="w-full max-w-md object-cover"
+          />
+        </div>
+
+        {/* Right — Content */}
         <div className="flex flex-col justify-center">
           <span className="mb-6 inline-block w-fit rounded-full border border-border-warm bg-paper-warm px-4 py-1.5 text-xs font-medium tracking-wide text-ink-muted">
             Clinician · Product Builder · Healthcare AI
           </span>
 
-          <h1 className="text-4xl leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[4.5rem]" style={{ fontFamily: "'DM Serif Display', serif" }}>
-            I stopped treating<br />
-            <em className="text-accent-red">one patient at a time.</em><br />
-            Now I build for millions.
+          <h1
+            className="text-3xl font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-5xl"
+            style={{ fontFamily: "'DM Serif Display', serif" }}
+          >
+            I build at the intersection of clinical intelligence, product, &amp; real-world impact.
           </h1>
 
           <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
@@ -34,16 +46,16 @@ export default function HeroSection() {
               Read on Substack
             </a>
           </div>
-        </div>
 
-        {/* Right */}
-        <div className="flex flex-col gap-3 rounded-lg bg-paper-warm p-6 lg:p-8">
-          {stats.map((s) => (
-            <div key={s.value} className="stat-card rounded-md border border-border-warm bg-card px-5 py-4">
-              <p className="text-2xl font-bold text-accent-red">{s.value}</p>
-              <p className="mt-1 text-sm font-light text-ink-muted">{s.label}</p>
-            </div>
-          ))}
+          {/* Stat cards */}
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {stats.map((s) => (
+              <div key={s.value} className="stat-card rounded-md border border-border-warm bg-card px-4 py-3">
+                <p className="text-xl font-bold text-accent-red">{s.value}</p>
+                <p className="mt-0.5 text-xs font-light text-ink-muted">{s.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
