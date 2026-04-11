@@ -16,10 +16,10 @@ export default function HeroSection() {
             Clinician · Product Builder · Healthcare AI
           </span>
 
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[4.5rem]">
-            I'm Dr. Aditi.<br />
-            <span className="text-ink">Clinician-turned-Product Manager</span><br />
-            <span className="text-2xl font-medium text-ink-muted sm:text-3xl lg:text-[2.5rem]">building AI products for healthcare.</span>
+          <h1 className="text-4xl leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[4.5rem]" style={{ fontFamily: "'DM Serif Display', serif" }}>
+            I stopped treating<br />
+            <em className="text-accent-red">one patient at a time.</em><br />
+            Now I build for millions.
           </h1>
 
           <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
