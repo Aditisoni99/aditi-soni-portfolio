@@ -14,13 +14,17 @@ export default function HeroSection() {
           Clinician · Product Builder · Healthcare AI
         </span>
 
-        <p className="mb-3 text-base text-ink-muted">Hi, I'm Aditi.</p>
-
         <h1
           className="text-3xl font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-[3.5rem]"
           style={{ fontFamily: "'DM Serif Display', serif" }}
         >
-          I build at the intersection of clinical intelligence, product, &amp; real-world impact.
+          Hi, I'm Aditi.
+          <br />
+          I build at the intersection of
+          <br />
+          <span className="italic text-accent-red">clinical intelligence, product,</span>
+          <br />
+          &amp; real-world impact.
         </h1>
 
         <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
