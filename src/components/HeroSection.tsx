@@ -3,7 +3,6 @@ const stats = [
   { value: "70%", label: "Pilot-to-paid conversion rate" },
   { value: "$120K", label: "Average savings per client" },
   { value: "35%", label: "Efficiency gains per deployment" },
-  { value: "74 NPS", label: "Post-onboarding score" },
 ];
 
 export default function HeroSection() {
@@ -22,9 +21,7 @@ export default function HeroSection() {
           <br />
           I build at the intersection of
           <br />
-          <span className="italic text-accent-red">clinical intelligence, product,</span>
-          <br />
-          &amp; real-world impact.
+          <span className="italic text-accent-red">clinical intelligence, product, &amp; real-world impact.</span>
         </h1>
 
         <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
@@ -40,7 +37,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-2">
           {stats.map((s) => (
             <div key={s.value} className="stat-card rounded-md border border-border-warm bg-card px-4 py-3">
               <p className="text-xl font-bold text-accent-red">{s.value}</p>
