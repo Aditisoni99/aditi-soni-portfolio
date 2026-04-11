@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section id="top" className="relative min-h-screen pt-24">
       <div className="mx-auto max-w-4xl px-6 py-16 lg:py-24">
         <span className="mb-6 inline-block w-fit rounded-full border border-border-warm bg-paper-warm px-4 py-1.5 text-xs font-medium tracking-wide text-ink-muted">
-          Clinician · Product Builder · Healthcare AI
+          Clinician · AI Product Manager
         </span>
 
         <h1
@@ -25,7 +25,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
-          Founding PM at Avenio AI. MS Health Informatics, University of Pittsburgh. 4.0 GPA.
+          Founding Product Manager. AI in Medicine. Digital Health Innovation.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
