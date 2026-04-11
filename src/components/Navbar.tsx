@@ -23,7 +23,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/cv.pdf" target="_blank" rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1bh2RmDy0xtA1AziTfOoQrKuTIax2mkiC/view?usp=sharing" target="_blank" rel="noopener noreferrer"
             className="rounded-md border border-accent-red px-4 py-2 text-sm font-semibold text-accent-red transition-colors hover:bg-accent-red hover:text-white"
           >
             Download CV
@@ -44,7 +44,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block rounded-md border border-accent-red px-4 py-2 text-sm font-semibold text-accent-red">
+          <a href="https://drive.google.com/file/d/1bh2RmDy0xtA1AziTfOoQrKuTIax2mkiC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block rounded-md border border-accent-red px-4 py-2 text-sm font-semibold text-accent-red">
             Download CV
           </a>
         </div>
