@@ -52,46 +52,44 @@
   --color-accent-red: var(--accent-red);
   --color-accent-light: var(--accent-light);
   --color-border-warm: var(--border-warm);
-  --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
 }
 
 :root {
   --radius: 0.625rem;
-  --background: #faf8f4;
-  --foreground: #0f0e0c;
+  --background: #ffffff;
+  --foreground: #1d1d1f;
   --card: #ffffff;
-  --card-foreground: #0f0e0c;
+  --card-foreground: #1d1d1f;
   --popover: #ffffff;
-  --popover-foreground: #0f0e0c;
+  --popover-foreground: #1d1d1f;
   --primary: #c8401a;
-  --primary-foreground: #faf8f4;
-  --secondary: #f2ede4;
-  --secondary-foreground: #0f0e0c;
-  --muted: #f2ede4;
-  --muted-foreground: #5a5852;
-  --accent: #f5e8e2;
-  --accent-foreground: #0f0e0c;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f7;
+  --secondary-foreground: #1d1d1f;
+  --muted: #f5f5f7;
+  --muted-foreground: #6e6e73;
+  --accent: #f5f5f7;
+  --accent-foreground: #1d1d1f;
   --destructive: #c8401a;
-  --destructive-foreground: #faf8f4;
-  --border: #e2ddd5;
-  --input: #e2ddd5;
+  --destructive-foreground: #ffffff;
+  --border: #d2d2d7;
+  --input: #d2d2d7;
   --ring: #c8401a;
   --chart-1: #c8401a;
-  --chart-2: #5a5852;
-  --chart-3: #9a9790;
-  --chart-4: #f2ede4;
-  --chart-5: #0f0e0c;
-  --paper: #faf8f4;
-  --paper-warm: #f2ede4;
-  --ink: #0f0e0c;
-  --ink-muted: #5a5852;
-  --ink-faint: #9a9790;
+  --chart-2: #6e6e73;
+  --chart-3: #86868b;
+  --chart-4: #f5f5f7;
+  --chart-5: #1d1d1f;
+  --paper: #ffffff;
+  --paper-warm: #f5f5f7;
+  --ink: #1d1d1f;
+  --ink-muted: #6e6e73;
+  --ink-faint: #86868b;
   --accent-red: #c8401a;
-  --accent-light: #f5e8e2;
-  --border-warm: #e2ddd5;
-  --font-serif: 'DM Serif Display', serif;
-  --font-sans: 'DM Sans', sans-serif;
+  --accent-light: #fef2ee;
+  --border-warm: #d2d2d7;
+  --font-sans: 'Inter', sans-serif;
 }
 
 @layer base {
@@ -107,12 +105,15 @@
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.025em;
   }
 }
 
