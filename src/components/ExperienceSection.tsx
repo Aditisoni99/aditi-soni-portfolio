@@ -24,7 +24,7 @@ const experiences = [
   },
   {
     period: "Feb 2025 — Nov 2025",
-    role: "Clinical AI Researcher",
+    role: "Data Science Intern",
     company: "Health & Rehabilitation Informatics Lab, University of Pittsburgh",
     bullets: [
       "Built LLM-powered diagnostic tool for spinal cord injury; reduced clinician consult time 30%",
@@ -43,7 +43,7 @@ const experiences = [
   },
   {
     period: "Jan 2023 — April 2024",
-    role: "Product Lead",
+    role: "Clinical Practitioner",
     company: "Scientific Dental Care — Ahmedabad, India",
     bullets: [
       "Translated clinician and patient pain points into structured product requirements, directly informing healthcare AI product development",
