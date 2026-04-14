@@ -62,24 +62,26 @@ export default function ExperienceSection() {
   const ref = useScrollFade();
 
   return (
-    <section id="experience" className="bg-paper py-20 lg:py-28">
-      <div ref={ref} className="fade-in-section mx-auto max-w-[820px] px-6">
-        <span className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red">Experience</span>
-        <h2 className="text-3xl font-bold text-ink sm:text-4xl">Where I've been.</h2>
+    <section id="experience" className="bg-white" style={{ padding: "80px 32px" }}>
+      <div ref={ref} className="fade-in-section mx-auto max-w-[820px]">
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+          EXPERIENCE
+        </p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+          The journey.
+        </h2>
 
-        <div className="relative mt-12 border-l border-border-warm pl-8">
+        <div className="relative mt-12" style={{ borderLeft: "0.5px solid #EEE8DC", paddingLeft: 32 }}>
           {experiences.map((exp, i) => (
             <div key={i} className="relative mb-12 last:mb-0">
-              <div className="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full bg-accent-red" />
-
-              <p className="text-xs font-medium uppercase tracking-wider text-ink-faint">{exp.period}</p>
-              <h3 className="mt-1 text-xl font-bold text-ink">{exp.role}</h3>
-              <p className="mt-0.5 text-sm font-semibold text-accent-red">{exp.company}</p>
-
+              <div className="absolute" style={{ left: -36.5, top: 6, width: 8, height: 8, borderRadius: "50%", background: "#C8A882" }} />
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{exp.period}</p>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410", marginTop: 4 }}>{exp.role}</h3>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#C8A882", marginTop: 2 }}>{exp.company}</p>
               <ul className="mt-3 space-y-2">
                 {exp.bullets.map((b, j) => (
-                  <li key={j} className="flex gap-2 text-sm font-light leading-relaxed text-ink-muted">
-                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ink-faint" />
+                  <li key={j} className="flex gap-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, lineHeight: 1.7, color: "#7A7060" }}>
+                    <span style={{ marginTop: 7, width: 3, height: 3, borderRadius: "50%", background: "#B0A898", flexShrink: 0 }} />
                     {b}
                   </li>
                 ))}
@@ -89,12 +91,12 @@ export default function ExperienceSection() {
         </div>
 
         <div className="mt-16">
-          <h3 className="text-xl font-bold text-ink">Education</h3>
+          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410" }}>Education</h3>
           <div className="mt-6 space-y-4">
             {education.map((ed, i) => (
-              <div key={i} className="rounded-md border border-border-warm bg-card px-5 py-4">
-                <p className="font-semibold text-ink">{ed.degree}</p>
-                <p className="mt-1 text-sm font-light text-ink-muted">
+              <div key={i} style={{ border: "0.5px solid #EEE8DC", padding: "16px 20px" }}>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "#1A1410" }}>{ed.degree}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, color: "#7A7060", marginTop: 4 }}>
                   {ed.school} · {ed.years} · GPA: {ed.gpa}
                 </p>
               </div>

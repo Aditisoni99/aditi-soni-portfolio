@@ -1,47 +1,206 @@
 const stats = [
-  { value: "30+", label: "Enterprise biopharma partners" },
-  { value: "70%", label: "Pilot-to-paid conversion rate" },
-  { value: "$120K", label: "Average savings per client" },
-  { value: "35%", label: "Efficiency gains per deployment" },
+  { value: "30+", label: "ENTERPRISE" },
+  { value: "70%", label: "CONVERSION" },
+  { value: "$120K", label: "SAVED/CLIENT", highlight: true },
+  { value: "4.0", label: "GPA" },
 ];
 
 export default function HeroSection() {
   return (
-    <section id="top" className="relative min-h-screen pt-24">
-      <div className="mx-auto max-w-4xl px-6 py-16 lg:py-24">
-        <span className="mb-6 inline-block w-fit rounded-full border border-border-warm bg-paper-warm px-4 py-1.5 text-xs font-medium tracking-wide text-ink-muted">
-          Clinician · AI Product Manager
-        </span>
-
-        <h1
-          className="text-3xl font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-[3.5rem]"
-          style={{ fontFamily: "'DM Serif Display', serif" }}
+    <section id="top" className="bg-white" style={{ padding: "52px 32px 40px" }}>
+      <div className="mx-auto max-w-4xl" style={{ paddingTop: 54 }}>
+        {/* Eyebrow */}
+        <p
+          style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: 9,
+            letterSpacing: "0.18em",
+            color: "#B0A898",
+            textTransform: "uppercase",
+            marginBottom: 24,
+          }}
         >
-          Hi, I'm Aditi.
-          <br />
-          I build at the intersection of
-          <br />
-          <span className="italic text-accent-red">clinical intelligence, product, &amp; real-world impact.</span>
-        </h1>
-
-        <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-ink-muted">
-          Founding Product Manager. AI in Medicine. Digital Health Innovation.
+          FOUNDING PRODUCT MANAGER · CLINICIAN · BUILDER
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a href="#case-studies" className="rounded-md bg-accent-red px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-            View My Work
+        {/* Main heading */}
+        <h1
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: 52,
+            fontWeight: 300,
+            color: "#1A1410",
+            lineHeight: 1.1,
+            letterSpacing: "-0.01em",
+            marginBottom: 16,
+          }}
+        >
+          Hi, I'm Aditi. I build at the intersection of clinical intelligence, product, & real-world impact.
+        </h1>
+
+        {/* Subheading */}
+        <div style={{ marginBottom: 20 }}>
+          <p
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 38,
+              fontWeight: 300,
+              color: "#1A1410",
+              lineHeight: 1.15,
+            }}
+          >
+            I stopped treating
+          </p>
+          <p
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 38,
+              fontWeight: 300,
+              color: "#1A1410",
+              lineHeight: 1.15,
+            }}
+          >
+            one patient at a time.
+          </p>
+          <p
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 38,
+              fontWeight: 300,
+              fontStyle: "italic",
+              color: "#C8A882",
+              lineHeight: 1.15,
+            }}
+          >
+            Now I build for millions.
+          </p>
+        </div>
+
+        {/* Decorative line */}
+        <div style={{ width: 28, height: 0.5, background: "#C8A882", marginBottom: 16 }} />
+
+        {/* Description line */}
+        <p
+          style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: 12,
+            fontStyle: "italic",
+            fontWeight: 300,
+            color: "#7A7060",
+            marginBottom: 14,
+          }}
+        >
+          Dentist. Founding PM at Avenio AI. Recovering perfectionist.
+        </p>
+
+        {/* Body paragraph */}
+        <p
+          style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: 12,
+            fontWeight: 300,
+            lineHeight: 1.9,
+            color: "#7A7060",
+            maxWidth: 460,
+            marginBottom: 28,
+          }}
+        >
+          I spent six years treating patients one at a time. Then I realized the leverage was in the system, not the chair. Now I ship clinical AI that scales across biopharma and healthcare.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex flex-wrap" style={{ gap: 10 }}>
+          <a
+            href="#experience"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 10,
+              letterSpacing: "0.06em",
+              background: "#1A1410",
+              color: "#FFFFFF",
+              padding: "10px 22px",
+              textDecoration: "none",
+              borderRadius: 0,
+            }}
+          >
+            SEE MY WORK
           </a>
-          <a href="https://clinicallyunhinged.substack.com" target="_blank" rel="noopener noreferrer" className="rounded-md border border-border-warm px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-ink">
-            Read on Substack
+          <a
+            href="https://letsvisualize.base44.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 10,
+              letterSpacing: "0.06em",
+              background: "#A8C4C8",
+              color: "#1A3035",
+              padding: "10px 22px",
+              textDecoration: "none",
+              borderRadius: 0,
+            }}
+          >
+            VISUALIZE ↗
+          </a>
+          <a
+            href="https://clinicallyunhinged.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 10,
+              letterSpacing: "0.06em",
+              border: "0.5px solid #EEE8DC",
+              color: "#B0A898",
+              padding: "10px 22px",
+              textDecoration: "none",
+              background: "none",
+              borderRadius: 0,
+            }}
+          >
+            CLINICALLY UNHINGED ↗
           </a>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-2">
-          {stats.map((s) => (
-            <div key={s.value} className="stat-card rounded-md border border-border-warm bg-card px-4 py-3">
-              <p className="text-xl font-bold text-accent-red">{s.value}</p>
-              <p className="mt-0.5 text-xs font-light text-ink-muted">{s.label}</p>
+        {/* Stats row */}
+        <div
+          className="grid grid-cols-4"
+          style={{
+            borderTop: "0.5px solid #EEE8DC",
+            paddingTop: 24,
+            marginTop: 40,
+          }}
+        >
+          {stats.map((s, i) => (
+            <div
+              key={s.label}
+              style={{
+                borderLeft: i > 0 ? "0.5px solid #EEE8DC" : "none",
+                paddingLeft: i > 0 ? 20 : 0,
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: 32,
+                  fontWeight: 400,
+                  color: s.highlight ? "#C8A882" : "#1A1410",
+                }}
+              >
+                {s.value}
+              </p>
+              <p
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 9,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.08em",
+                  color: "#B0A898",
+                  marginTop: 3,
+                }}
+              >
+                {s.label}
+              </p>
             </div>
           ))}
         </div>

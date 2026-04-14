@@ -23,18 +23,33 @@ export default function SkillsSection() {
   const ref = useScrollFade();
 
   return (
-    <section id="skills" className="py-20 lg:py-28" style={{ backgroundColor: "#f5f5f5" }}>
-      <div ref={ref} className="fade-in-section mx-auto max-w-7xl px-6">
-        <span className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red">Skills</span>
-        <h2 className="mb-10 text-3xl font-bold text-ink sm:text-4xl">What I work with.</h2>
+    <section id="skills" className="bg-white" style={{ padding: "80px 32px" }}>
+      <div ref={ref} className="fade-in-section mx-auto max-w-7xl">
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+          SKILLS
+        </p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410", marginBottom: 40 }}>
+          Craft.
+        </h2>
 
         <div className="grid gap-8 sm:grid-cols-2">
           {skillGroups.map((g) => (
             <div key={g.label}>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-ink-faint">{g.label}</p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898", marginBottom: 12 }}>{g.label}</p>
               <div className="flex flex-wrap gap-2">
                 {g.tags.map((t) => (
-                  <span key={t} className="rounded-full border border-border-warm bg-card px-3 py-1 text-xs font-medium text-ink-muted">
+                  <span
+                    key={t}
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 10,
+                      fontWeight: 400,
+                      color: "#7A7060",
+                      border: "0.5px solid #EEE8DC",
+                      padding: "5px 12px",
+                      borderRadius: 0,
+                    }}
+                  >
                     {t}
                   </span>
                 ))}
