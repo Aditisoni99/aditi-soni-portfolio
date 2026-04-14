@@ -11,33 +11,64 @@ const details = [
 export default function ContactSection() {
   const ref = useScrollFade();
   return (
-    <section id="contact" className="bg-paper py-20 lg:py-28">
-      <div ref={ref} className="fade-in-section mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2">
+    <section id="contact" className="bg-white" style={{ padding: "80px 32px" }}>
+      <div ref={ref} className="fade-in-section mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
         <div>
-          <span className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red">Contact</span>
-          <h2 className="text-3xl font-bold text-ink sm:text-4xl">Let's talk.</h2>
-          <p className="mt-4 max-w-md text-base font-light leading-relaxed text-ink-muted">
-      
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+            CONTACT
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href="mailto:aditisoni1309@gmail.com" className="rounded-md bg-accent-red px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-              Email Me
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+            Say hello.
+          </h2>
+          <div className="mt-8 flex flex-wrap" style={{ gap: 10 }}>
+            <a
+              href="mailto:aditisoni1309@gmail.com"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 10,
+                letterSpacing: "0.06em",
+                background: "#1A1410",
+                color: "#FFFFFF",
+                padding: "10px 22px",
+                textDecoration: "none",
+              }}
+            >
+              EMAIL ME
             </a>
-            <a href="https://www.linkedin.com/in/draditisoni/" target="_blank" rel="noopener noreferrer" className="rounded-md border border-border-warm px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-ink">
-              Connect on LinkedIn
+            <a
+              href="https://www.linkedin.com/in/draditisoni/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 10,
+                letterSpacing: "0.06em",
+                border: "0.5px solid #EEE8DC",
+                color: "#B0A898",
+                padding: "10px 22px",
+                textDecoration: "none",
+                background: "none",
+              }}
+            >
+              CONNECT ON LINKEDIN
             </a>
           </div>
         </div>
         <div className="space-y-4">
           {details.map((d) => (
-            <div key={d.label} className="flex items-baseline justify-between border-b border-border-warm pb-3">
-              <span className="text-xs font-semibold uppercase tracking-widest text-ink-faint">{d.label}</span>
+            <div key={d.label} className="flex items-baseline justify-between" style={{ borderBottom: "0.5px solid #EEE8DC", paddingBottom: 12 }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{d.label}</span>
               {d.href ? (
-                <a href={d.href} target={d.href.startsWith("mailto") ? "_self" : "_blank"} rel="noopener noreferrer" className="text-sm font-medium text-ink hover:text-accent-red">
+                <a
+                  href={d.href}
+                  target={d.href.startsWith("mailto") ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 400, color: "#1A1410", textDecoration: "none" }}
+                >
                   {d.value}
                 </a>
               ) : (
-                <span className="text-sm font-medium text-ink">{d.value}</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 400, color: "#1A1410" }}>{d.value}</span>
               )}
             </div>
           ))}

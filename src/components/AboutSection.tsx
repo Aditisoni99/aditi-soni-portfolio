@@ -3,14 +3,14 @@ import { useScrollFade } from "@/hooks/use-scroll-fade";
 export default function AboutSection() {
   const ref = useScrollFade();
   return (
-    <section id="about" className="bg-white py-20 lg:py-28">
-      <div ref={ref} className="fade-in-section mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2">
+    <section id="about" className="bg-white" style={{ padding: "80px 32px" }}>
+      <div ref={ref} className="fade-in-section mx-auto max-w-7xl grid gap-12 lg:grid-cols-2">
         <div>
-          <span className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red">About</span>
-          <h2 className="font-serif text-5xl sm:text-6xl text-ink leading-tight mt-2 font-bold">
-            Years in Healthcare.{" "}
-            <em className="text-accent-red not-italic font-bold" style={{fontStyle: "italic"}}>Now I build AI products</em>{" "}
-            that actually work in healthcare.
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+            ABOUT
+          </p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+            Who I am.
           </h2>
         </div>
         <div className="space-y-8">
@@ -24,9 +24,9 @@ export default function AboutSection() {
               body: "Roadmaps, pre-sales, GTM, pricing, implementation. I own the entire product motion from discovery to revenue."
             }
           ].map((item) => (
-            <div key={item.title} className="border-l-2 border-accent-red pl-6">
-              <p className="font-semibold text-ink text-lg mb-1">{item.title}</p>
-              <p className="text-ink-muted leading-relaxed">{item.body}</p>
+            <div key={item.title} style={{ borderLeft: "0.5px solid #C8A882", paddingLeft: 24 }}>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, color: "#1A1410", marginBottom: 4 }}>{item.title}</p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 300, lineHeight: 1.8, color: "#7A7060" }}>{item.body}</p>
             </div>
           ))}
         </div>

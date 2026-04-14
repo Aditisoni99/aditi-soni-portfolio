@@ -10,16 +10,20 @@ export default function TestimonialsSection() {
   const ref = useScrollFade();
 
   return (
-    <section className="bg-paper-warm py-20 lg:py-28">
-      <div ref={ref} className="fade-in-section mx-auto max-w-7xl px-6">
-        <span className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red">Testimonials</span>
-        <h2 className="text-3xl font-bold text-ink sm:text-4xl">What people say.</h2>
+    <section className="bg-white" style={{ padding: "80px 32px" }}>
+      <div ref={ref} className="fade-in-section mx-auto max-w-7xl">
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+          TESTIMONIALS
+        </p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+          Kind words.
+        </h2>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {testimonials.map((t, i) => (
-            <div key={i} className="rounded-lg border border-border-warm bg-card p-6">
-              <span className="text-5xl font-bold leading-none text-accent-red">&ldquo;</span>
-              <p className="mt-2 text-sm font-light leading-relaxed text-ink-muted">{t}</p>
+            <div key={i} style={{ border: "0.5px solid #EEE8DC", padding: 24 }}>
+              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC", lineHeight: 1 }}>&ldquo;</span>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, lineHeight: 1.7, color: "#7A7060", marginTop: 8 }}>{t}</p>
             </div>
           ))}
         </div>

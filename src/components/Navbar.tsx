@@ -1,10 +1,9 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Experience", href: "#experience" },
-  { label: "Case Studies", href: "#case-studies" },
+  { label: "Work", href: "#case-studies" },
   { label: "Projects", href: "#projects" },
-  { label: "About", href: "#about" },
+  { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -12,40 +11,105 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border-warm" style={{ backgroundColor: "rgba(255,255,255,0.92)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" className="text-xl font-bold text-ink">Dr. Aditi Soni</a>
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 bg-white"
+      style={{ borderBottom: "0.5px solid #EEE8DC", height: 54 }}
+    >
+      <div className="flex items-center justify-between h-full" style={{ padding: "0 32px" }}>
+        <a
+          href="#top"
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: 16,
+            fontWeight: 400,
+            letterSpacing: "0.06em",
+            color: "#1A1410",
+            textDecoration: "none",
+          }}
+        >
+          ADITI SONI
+        </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center md:flex" style={{ gap: 24 }}>
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-ink-muted transition-colors hover:text-ink">
+            <a
+              key={l.href}
+              href={l.href}
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 10,
+                letterSpacing: "0.05em",
+                color: "#B0A898",
+                textDecoration: "none",
+              }}
+            >
               {l.label}
             </a>
           ))}
           <a
-            href="https://drive.google.com/file/d/1JnhHm0d0cqtGG93Jj8rjc0s-zNhR9KYT/view?usp=sharing" target="_blank" rel="noopener noreferrer"
-            className="rounded-md border border-accent-red px-4 py-2 text-sm font-semibold text-accent-red transition-colors hover:bg-accent-red hover:text-white"
+            href="https://drive.google.com/file/d/1JnhHm0d0cqtGG93Jj8rjc0s-zNhR9KYT/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 9,
+              letterSpacing: "0.08em",
+              color: "#1A1410",
+              border: "0.5px solid #1A1410",
+              padding: "5px 14px",
+              textDecoration: "none",
+              background: "none",
+              borderRadius: 0,
+            }}
           >
-            Download CV
+            RESUME
           </a>
         </div>
 
-        <button onClick={() => setOpen(!open)} className="flex flex-col gap-1.5 md:hidden" aria-label="Toggle menu">
-          <span className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
-          <span className={`block h-0.5 w-6 bg-ink transition-opacity ${open ? "opacity-0" : ""}`} />
-          <span className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+        <button onClick={() => setOpen(!open)} className="flex flex-col md:hidden" style={{ gap: 5 }} aria-label="Toggle menu">
+          <span className={`block bg-ink transition-transform`} style={{ height: 0.5, width: 20, backgroundColor: "#1A1410", transform: open ? "translateY(5.5px) rotate(45deg)" : "none" }} />
+          <span className={`block bg-ink transition-opacity`} style={{ height: 0.5, width: 20, backgroundColor: "#1A1410", opacity: open ? 0 : 1 }} />
+          <span className={`block bg-ink transition-transform`} style={{ height: 0.5, width: 20, backgroundColor: "#1A1410", transform: open ? "translateY(-5.5px) rotate(-45deg)" : "none" }} />
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-border-warm bg-paper px-6 pb-6 pt-4 md:hidden">
+        <div className="md:hidden" style={{ borderTop: "0.5px solid #EEE8DC", background: "#FFFFFF", padding: "16px 32px 24px" }}>
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-3 text-sm font-medium text-ink-muted">
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="block"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 11,
+                letterSpacing: "0.05em",
+                color: "#B0A898",
+                textDecoration: "none",
+                padding: "10px 0",
+              }}
+            >
               {l.label}
             </a>
           ))}
-          <a href="https://drive.google.com/file/d/1JnhHm0d0cqtGG93Jj8rjc0s-zNhR9KYT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block rounded-md border border-accent-red px-4 py-2 text-sm font-semibold text-accent-red">
-            Download CV
+          <a
+            href="https://drive.google.com/file/d/1JnhHm0d0cqtGG93Jj8rjc0s-zNhR9KYT/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 9,
+              letterSpacing: "0.08em",
+              color: "#1A1410",
+              border: "0.5px solid #1A1410",
+              padding: "5px 14px",
+              textDecoration: "none",
+              display: "inline-block",
+              marginTop: 10,
+            }}
+          >
+            RESUME
           </a>
         </div>
       )}
