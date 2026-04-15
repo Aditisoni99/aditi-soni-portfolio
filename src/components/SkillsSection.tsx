@@ -25,7 +25,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-7xl">
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+        <p className="text-xs text-sky-700" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
           SKILLS
         </p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410", marginBottom: 40 }}>
@@ -35,7 +35,7 @@ export default function SkillsSection() {
         <div className="grid gap-8 sm:grid-cols-2">
           {skillGroups.map((g) => (
             <div key={g.label}>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898", marginBottom: 12 }}>{g.label}</p>
+              <p className="text-slate-900" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898", marginBottom: 12 }}>{g.label}</p>
               <div className="flex flex-wrap gap-2">
                 {g.tags.map((t) => (
                   <span

@@ -11,6 +11,7 @@ export default function HeroSection() {
       <div className="mx-auto max-w-4xl" style={{ paddingTop: 54 }}>
         {/* Eyebrow */}
         <p
+          className="text-orange-900 text-xs font-mono"
           style={{
             fontFamily: "'DM Sans', sans-serif",
             fontSize: 9,
@@ -63,6 +64,7 @@ export default function HeroSection() {
             one patient at a time.
           </p>
           <p
+            className="text-[#d55c10]"
             style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: 38,

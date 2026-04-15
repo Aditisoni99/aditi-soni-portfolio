@@ -6,7 +6,7 @@ export default function AboutSection() {
     <section id="about" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-7xl grid gap-12 lg:grid-cols-2">
         <div>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+          <p className="font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
             ABOUT
           </p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
