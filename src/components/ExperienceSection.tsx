@@ -64,7 +64,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-[820px]">
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+        <p className="text-orange-900 font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
           EXPERIENCE
         </p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
@@ -75,9 +75,9 @@ export default function ExperienceSection() {
           {experiences.map((exp, i) => (
             <div key={i} className="relative mb-12 last:mb-0">
               <div className="absolute" style={{ left: -36.5, top: 6, width: 8, height: 8, borderRadius: "50%", background: "#C8A882" }} />
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{exp.period}</p>
+              <p className="font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{exp.period}</p>
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410", marginTop: 4 }}>{exp.role}</h3>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#C8A882", marginTop: 2 }}>{exp.company}</p>
+              <p className="text-slate-950 font-thin font-serif" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#C8A882", marginTop: 2 }}>{exp.company}</p>
               <ul className="mt-3 space-y-2">
                 {exp.bullets.map((b, j) => (
                   <li key={j} className="flex gap-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, lineHeight: 1.7, color: "#7A7060" }}>

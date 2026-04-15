@@ -6,7 +6,7 @@ export default function CaseStudiesSection() {
   return (
     <section id="case-studies" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-7xl">
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+        <p className="font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
           CASE STUDIES
         </p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
@@ -16,7 +16,7 @@ export default function CaseStudiesSection() {
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {/* Card 1 */}
           <div style={{ border: "0.5px solid #EEE8DC", padding: 32 }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC" }}>01</p>
+            <p className="text-orange-900" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC" }}>01</p>
             <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 9, letterSpacing: "0.1em", color: "#A8C4C8", display: "inline-block", marginTop: 12 }}>AI PRODUCT · BIOPHARMA</span>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410", marginTop: 12 }}>
               Reducing Clinical Trial Protocol from 6 Months to 4 Months
@@ -26,7 +26,7 @@ export default function CaseStudiesSection() {
             </p>
 
             <div style={{ marginTop: 20 }}>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898", marginBottom: 8 }}>My Role</p>
+              <p className="text-xs" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898", marginBottom: 8 }}>My Role</p>
               <ul className="space-y-1.5">
                 {[
                   "Positioned Avenio as the AI-native frontrunner in clinical trial operations",
@@ -60,8 +60,8 @@ export default function CaseStudiesSection() {
 
           {/* Card 2 */}
           <div style={{ border: "0.5px solid #EEE8DC", padding: 32 }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC" }}>02</p>
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 9, letterSpacing: "0.1em", color: "#A8C4C8", display: "inline-block", marginTop: 12 }}>SYSTEMS · OPERATIONS</span>
+            <p className="text-orange-900" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC" }}>02</p>
+            <span className="text-xs" style={{ fontFamily: "'DM Mono', monospace", fontSize: 9, letterSpacing: "0.1em", color: "#A8C4C8", display: "inline-block", marginTop: 12 }}>SYSTEMS · OPERATIONS</span>
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410", marginTop: 12 }}>
               40% Efficiency Gain Through Legacy System Modernization
             </h3>
