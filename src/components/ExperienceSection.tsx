@@ -64,24 +64,24 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-[820px]">
-        <p className="text-orange-900 font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.14em", color: "#3A3530", marginBottom: 16 }}>
           EXPERIENCE
         </p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 64, fontWeight: 300, color: "#1A1410", lineHeight: 1 }}>
           The journey.
         </h2>
 
         <div className="relative mt-12" style={{ borderLeft: "0.5px solid #EEE8DC", paddingLeft: 32 }}>
           {experiences.map((exp, i) => (
             <div key={i} className="relative mb-12 last:mb-0">
-              <div className="absolute" style={{ left: -36.5, top: 6, width: 8, height: 8, borderRadius: "50%", background: "#C8A882" }} />
-              <p className="font-sans" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{exp.period}</p>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410", marginTop: 4 }}>{exp.role}</h3>
-              <p className="text-slate-950 font-thin font-serif" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#C8A882", marginTop: 2 }}>{exp.company}</p>
+              <div className="absolute" style={{ left: -36.5, top: 6, width: 8, height: 8, borderRadius: "50%", background: "#A07850" }} />
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em", color: "#2A6A7A" }}>{exp.period}</p>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 30, fontWeight: 400, color: "#1A1410", marginTop: 4, lineHeight: 1.1 }}>{exp.role}</h3>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 400, color: "#A07850", marginTop: 4 }}>{exp.company}</p>
               <ul className="mt-3 space-y-2">
                 {exp.bullets.map((b, j) => (
-                  <li key={j} className="flex gap-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, lineHeight: 1.7, color: "#7A7060" }}>
-                    <span style={{ marginTop: 7, width: 3, height: 3, borderRadius: "50%", background: "#B0A898", flexShrink: 0 }} />
+                  <li key={j} className="flex gap-2" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 300, lineHeight: 1.9, color: "#3A3530" }}>
+                    <span style={{ marginTop: 9, width: 3, height: 3, borderRadius: "50%", background: "#A07850", flexShrink: 0 }} />
                     {b}
                   </li>
                 ))}
@@ -91,12 +91,12 @@ export default function ExperienceSection() {
         </div>
 
         <div className="mt-16">
-          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 400, color: "#1A1410" }}>Education</h3>
+          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 30, fontWeight: 400, color: "#1A1410" }}>Education</h3>
           <div className="mt-6 space-y-4">
             {education.map((ed, i) => (
               <div key={i} style={{ border: "0.5px solid #EEE8DC", padding: "16px 20px" }}>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 500, color: "#1A1410" }}>{ed.degree}</p>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, color: "#7A7060", marginTop: 4 }}>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, color: "#1A1410" }}>{ed.degree}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 300, color: "#3A3530", marginTop: 4, lineHeight: 1.9 }}>
                   {ed.school} · {ed.years} · GPA: {ed.gpa}
                 </p>
               </div>

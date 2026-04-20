@@ -11,12 +11,11 @@ export default function HeroSection() {
       <div className="mx-auto max-w-4xl" style={{ paddingTop: 54 }}>
         {/* Eyebrow */}
         <p
-          className="text-orange-900 text-xs font-mono"
           style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: 9,
+            fontSize: 11,
             letterSpacing: "0.18em",
-            color: "#B0A898",
+            color: "#3A3530",
             textTransform: "uppercase",
             marginBottom: 24,
           }}
@@ -26,12 +25,12 @@ export default function HeroSection() {
 
         {/* Main heading */}
         <h1
+          className="text-[44px] md:text-[72px]"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 52,
             fontWeight: 300,
             color: "#1A1410",
-            lineHeight: 1.1,
+            lineHeight: 0.95,
             letterSpacing: "-0.01em",
             marginBottom: 16,
           }}
@@ -64,13 +63,12 @@ export default function HeroSection() {
             one patient at a time.
           </p>
           <p
-            className="text-[#d55c10]"
             style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: 38,
               fontWeight: 300,
               fontStyle: "italic",
-              color: "#C8A882",
+              color: "#A07850",
               lineHeight: 1.15,
             }}
           >
@@ -79,16 +77,16 @@ export default function HeroSection() {
         </div>
 
         {/* Decorative line */}
-        <div style={{ width: 28, height: 0.5, background: "#C8A882", marginBottom: 16 }} />
+        <div style={{ width: 28, height: 0.5, background: "#A07850", marginBottom: 16 }} />
 
         {/* Description line */}
         <p
           style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: 12,
+            fontSize: 14,
             fontStyle: "italic",
             fontWeight: 300,
-            color: "#7A7060",
+            color: "#3A3530",
             marginBottom: 14,
           }}
         >
@@ -99,10 +97,10 @@ export default function HeroSection() {
         <p
           style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: 12,
+            fontSize: 14,
             fontWeight: 300,
             lineHeight: 1.9,
-            color: "#7A7060",
+            color: "#3A3530",
             maxWidth: 460,
             marginBottom: 28,
           }}
@@ -152,8 +150,8 @@ export default function HeroSection() {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: 10,
               letterSpacing: "0.06em",
-              border: "0.5px solid #EEE8DC",
-              color: "#B0A898",
+              border: "0.5px solid #C0B0A0",
+              color: "#3A3530",
               padding: "10px 22px",
               textDecoration: "none",
               background: "none",
@@ -186,7 +184,7 @@ export default function HeroSection() {
                   fontFamily: "'Cormorant Garamond', serif",
                   fontSize: 32,
                   fontWeight: 400,
-                  color: s.highlight ? "#C8A882" : "#1A1410",
+                  color: s.highlight ? "#A07850" : "#1A1410",
                 }}
               >
                 {s.value}
@@ -194,10 +192,10 @@ export default function HeroSection() {
               <p
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 9,
+                  fontSize: 10,
                   textTransform: "uppercase",
                   letterSpacing: "0.08em",
-                  color: "#B0A898",
+                  color: "#3A3530",
                   marginTop: 3,
                 }}
               >

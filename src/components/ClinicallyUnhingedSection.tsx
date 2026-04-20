@@ -13,13 +13,13 @@ export default function ClinicallyUnhingedSection() {
       }}
     >
       <div>
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: "0.14em", color: "#6A6058", textTransform: "uppercase", marginBottom: 8 }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, letterSpacing: "0.14em", color: "#777777", textTransform: "uppercase", marginBottom: 8 }}>
           WRITING
         </p>
-        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 28, fontWeight: 400, color: "#F0EBE2", marginBottom: 10 }}>
-          Clinically Unhinged
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 64, fontWeight: 300, color: "#F0EBE2", marginBottom: 10, lineHeight: 1 }}>
+          Clinically Unhinged.
         </h3>
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, color: "#7A7060", lineHeight: 1.7, maxWidth: 380 }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 300, color: "#B8B0A0", lineHeight: 1.9, maxWidth: 460 }}>
           Health AI commentary, career pivots, and everything they don't teach you in clinical school.
         </p>
       </div>
@@ -42,7 +42,7 @@ export default function ClinicallyUnhingedSection() {
         >
           READ ON SUBSTACK ↗
         </a>
-        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 9, color: "#4A4038", letterSpacing: "0.04em" }}>
+        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, color: "#666666", letterSpacing: "0.04em" }}>
           clinicallyunhinged.substack.com
         </span>
       </div>
