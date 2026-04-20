@@ -12,10 +12,10 @@ export default function TestimonialsSection() {
   return (
     <section className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto max-w-7xl">
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.14em", color: "#3A3530", marginBottom: 16 }}>
           TESTIMONIALS
         </p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 64, fontWeight: 300, color: "#1A1410", lineHeight: 1 }}>
           Kind words.
         </h2>
 
@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
           {testimonials.map((t, i) => (
             <div key={i} style={{ border: "0.5px solid #EEE8DC", padding: 24 }}>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 48, fontWeight: 300, color: "#EEE8DC", lineHeight: 1 }}>&ldquo;</span>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 300, lineHeight: 1.7, color: "#7A7060", marginTop: 8 }}>{t}</p>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 300, lineHeight: 1.9, color: "#3A3530", marginTop: 8 }}>{t}</p>
             </div>
           ))}
         </div>

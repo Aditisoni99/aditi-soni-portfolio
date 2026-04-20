@@ -14,11 +14,11 @@ export default function ContactSection() {
     <section id="contact" className="bg-white" style={{ padding: "80px 32px" }}>
       <div ref={ref} className="fade-in-section mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
         <div>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.14em", color: "#B0A898", marginBottom: 16 }}>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.14em", color: "#3A3530", marginBottom: 16 }}>
             CONTACT
           </p>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 36, fontWeight: 300, color: "#1A1410" }}>
-            Say hello.
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 64, fontWeight: 300, color: "#1A1410", lineHeight: 1 }}>
+            Let's build something.
           </h2>
           <div className="mt-8 flex flex-wrap" style={{ gap: 10 }}>
             <a
@@ -43,8 +43,8 @@ export default function ContactSection() {
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: 10,
                 letterSpacing: "0.06em",
-                border: "0.5px solid #EEE8DC",
-                color: "#B0A898",
+                border: "0.5px solid #C0B0A0",
+                color: "#3A3530",
                 padding: "10px 22px",
                 textDecoration: "none",
                 background: "none",
@@ -57,18 +57,18 @@ export default function ContactSection() {
         <div className="space-y-4">
           {details.map((d) => (
             <div key={d.label} className="flex items-baseline justify-between" style={{ borderBottom: "0.5px solid #EEE8DC", paddingBottom: 12 }}>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.08em", color: "#B0A898" }}>{d.label}</span>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em", color: "#3A3530" }}>{d.label}</span>
               {d.href ? (
                 <a
                   href={d.href}
                   target={d.href.startsWith("mailto") ? "_self" : "_blank"}
                   rel="noopener noreferrer"
-                  style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 400, color: "#1A1410", textDecoration: "none" }}
+                  style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 400, color: "#1A1410", textDecoration: "none" }}
                 >
                   {d.value}
                 </a>
               ) : (
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 400, color: "#1A1410" }}>{d.value}</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 400, color: "#1A1410" }}>{d.value}</span>
               )}
             </div>
           ))}
